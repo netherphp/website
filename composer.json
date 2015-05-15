@@ -1,0 +1,11 @@
+{
+	"minimum-stability":"dev",
+	"require": {
+		"netherphp/world": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"Routes\\": "routes/"
+		}
+	}
+}
