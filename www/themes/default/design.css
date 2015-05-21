@@ -34,10 +34,13 @@ p { margin:0px 0px 20px 0px; }
 /*//////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////*/
 
-a.Button { background:#5884B5; color:#fff; display:inline-block; padding:10px; text-decoration:none; }
+a.Button { background:#5884B5; color:#fff; display:inline-block; padding:10px; overflow:auto; text-decoration:none; }
 a.Button:hover { background:#D1ADD5; color:#000; }
 a.ButtonAlt { background:#262626; }
 a.ButtonAlt:hover { background:#D1ADD5; color:#000; }
+
+.Button > i { margin-right:4px; }
+.ButtonButton { margin-top:8px; }
 
 .gist { float:right; margin:0px 0px 20px 20px; }
 .gist .line,
