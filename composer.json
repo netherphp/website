@@ -1,7 +1,8 @@
 {
 	"minimum-stability":"dev",
 	"require": {
-		"netherphp/world": "dev-master"
+		"netherphp/world": "dev-master",
+		"kukulich/fshl": "~2.1.0"
 	},
 	"autoload": {
 		"psr-4": {

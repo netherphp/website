@@ -1,0 +1,104 @@
+<?php
+
+$javascript = new FSHL\Highlighter(new FSHL\Output\HTML);
+$javascript->setLexer(new FSHL\Lexer\Javascript);
+
+?>
+
+<script src="/code/nui/intro01.js"></script>
+<script src="/code/nui/intro02.js"></script>
+
+<div class="PageSection SplashSection SplashGraphicHome"><div>
+	<h2>Nether UI</h2>
+	<p>The Javascript UI framework by people who hate Javascript, for people who hate Javascript.</p>
+	<p style="text-align:center;"><a id="lol" href="#" class="Button">click me!</a></p>
+</div></div>
+
+<div class="PageSection PromoSection"><div>
+	<p>NUI is a small lightweight Javascript UI framework designed to handle most simple use cases
+	for dynamic user interaction.</p>
+	<p>It is still new - so new in fact the only real widget currently available is Dialog and a few
+	supporting classes like Overlay, Button, and Image.</p>
+</div></div>
+
+<div class="PageSection"><div>
+	<h2 class="NetherHeader">Stacking and Packing</h2>
+	
+	<p>The problem with most frameworks I encounter is that they are so different from eachother
+	that what you learned about one is not even remotely relevant for another. Hillariously, the
+	same is true for this framework.</p>
+	<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/nui/intro01.js',PROJECT_ROOT))); ?></pre>
+
+	<p>However this stuff should still be fairly simple and straight-forward. If you have ever used someting like GTK, that experience will serve you well. Basically, you are widget stacking and packing.</p>
+	<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/nui/intro02.js',PROJECT_ROOT))); ?></pre>
+
+	<p>Go ahead, test this code.</p>
+	<p style="text-align:center;">
+		<a href="#" class="Button" onclick="return LocalIntroNormalDialog();">open a normal dialog</a>
+		<a href="#" class="Button" onclick="return LocalIntroModalDialog();">open a modal dialog</a>
+	</p>
+</div></div>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery('#lol').on('click',LocalHeaderButtonDialog);
+	return;
+});
+
+function LocalHeaderButtonDialog(e) {
+	var Modal, Dialog;
+	
+	Modal = new NUI.Overlay({
+		Content: (Dialog = new NUI.Dialog({
+			Moveable: false,
+			Title: 'Let me ask you a question...',
+			Width: '33%',
+			Content: 'Often I find many frameworks to be bloated and way too hard use, having the learning curve of the St. Louis bridge. So, do you actually like Javascript? Like... actually like it?',
+			Buttons: [
+				new NUI.Button({ Label:'Yeah, I like it enough.', Class:'NUI-Dialog-Accept' }),
+				new NUI.Button({ Label:'Nah, not really.', Class:'NUI-Dialog-Cancel' })
+			],
+			OnAccept: function() {
+				Dialog.Destroy();
+				Dialog = new NUI.Dialog({
+					Container: Modal.Get(),
+					Width: '33%',
+					Title: 'So you like Javascript...',
+					Content: 'You are a lucky person. Hopefully, this UI framework will not change your mind.',
+					Buttons: [
+						new NUI.Button({ Label:'OK', Class:'NUI-Dialog-Accept' })
+					],
+					OnAccept: function(){
+						Modal.Destroy();
+						return;
+					}
+				});
+				
+				NUI.Util.CenterInParent(Dialog.Get());			
+				return;
+			},
+			OnCancel: function() {
+				Dialog.Destroy();
+				Dialog = new NUI.Dialog({
+					Container: Modal.Get(),
+					Width: '33%',
+					Title: 'I hear you mang...',
+					Content: 'Let me show you what I think is a more sane way to deal with this crazy - check this UI framework out.',
+					Buttons: [
+						new NUI.Button({ Label:'Alrighty', Class:'NUI-Dialog-Accept' })
+					],
+					OnAccept: function(){
+						Modal.Destroy();
+						return;
+					}
+				});
+				
+				NUI.Util.CenterInParent(Dialog.Get());	
+				return;
+			}
+		}))
+	});
+
+	return false;
+}
+</script>

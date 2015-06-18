@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "447acd218ef020ddb0ccbf0570ff611a",
+    "hash": "550c6b4069d1be843debe037f0ee753e",
     "packages": [
         {
             "name": "andrewsville/php-token-reflection",
@@ -51,6 +51,48 @@
                 "tokenizer"
             ],
             "time": "2012-08-25 21:26:44"
+        },
+        {
+            "name": "kukulich/fshl",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kukulich/fshl.git",
+                "reference": "974c294ade5d76c0c16b6fe3fd3a584ba999b24f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kukulich/fshl/zipball/974c294ade5d76c0c16b6fe3fd3a584ba999b24f",
+                "reference": "974c294ade5d76c0c16b6fe3fd3a584ba999b24f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "FSHL": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jaroslav Hanslík",
+                    "homepage": "https://github.com/kukulich"
+                }
+            ],
+            "description": "FSHL is a free, open source, universal, fast syntax highlighter written in PHP.",
+            "homepage": "http://fshl.kukulich.cz/",
+            "keywords": [
+                "highlight",
+                "library",
+                "syntax"
+            ],
+            "time": "2012-09-08 19:00:07"
         },
         {
             "name": "michelf/php-markdown",
@@ -160,7 +202,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/cache/zipball/8258dfe264d25d79936fa5c24db887fec2ad8f58",
+                "url": "https://api.github.com/repos/netherphp/cache/zipball/8a0bb222467f2fc6860a8ead136dc6e2de4f92df",
                 "reference": "8258dfe264d25d79936fa5c24db887fec2ad8f58",
                 "shasum": ""
             },
@@ -299,7 +341,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/ki/zipball/c9781ee6a342028bc0f76fc3846f33b1bb7c66d5",
+                "url": "https://api.github.com/repos/netherphp/ki/zipball/ac6bc7925d1cc232f12ce1ba2fb1c570b32b3f39",
                 "reference": "c9781ee6a342028bc0f76fc3846f33b1bb7c66d5",
                 "shasum": ""
             },
@@ -425,7 +467,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/project/zipball/92cf3889c1419ee7487c943464a24bc2b7f96028",
+                "url": "https://api.github.com/repos/netherphp/project/zipball/1ef76bbab68885c0f98f9c90f1c2204dae92c8c2",
                 "reference": "92cf3889c1419ee7487c943464a24bc2b7f96028",
                 "shasum": ""
             },
@@ -475,7 +517,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/senpai/zipball/897410f194105ae44f8d6e35184a652fe42785bc",
+                "url": "https://api.github.com/repos/netherphp/senpai/zipball/4776acc1106dbb00f71f85811d71fe96862687a5",
                 "reference": "897410f194105ae44f8d6e35184a652fe42785bc",
                 "shasum": ""
             },
@@ -523,7 +565,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/stash/zipball/7a8889430acd809fec2b09b339080cf83ff85d6d",
+                "url": "https://api.github.com/repos/netherphp/stash/zipball/882912a2c53735c930f4c7e8f508ebb23828cbbb",
                 "reference": "7a8889430acd809fec2b09b339080cf83ff85d6d",
                 "shasum": ""
             },
@@ -566,7 +608,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/surface/zipball/b7df21465b2ff52951b9d249902d200ab36d59b5",
+                "url": "https://api.github.com/repos/netherphp/surface/zipball/e8209643b50ad36bda37c9854ae38a63c768623b",
                 "reference": "b7df21465b2ff52951b9d249902d200ab36d59b5",
                 "shasum": ""
             },
@@ -652,7 +694,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/world/zipball/506539b9d0f64a464badc69a25fadc245dd13b6a",
+                "url": "https://api.github.com/repos/netherphp/world/zipball/041882ad410e1d388935861ddf47de251ea46dc1",
                 "reference": "506539b9d0f64a464badc69a25fadc245dd13b6a",
                 "shasum": ""
             },

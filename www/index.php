@@ -9,5 +9,7 @@ require(sprintf(
 
 $router = (new Nether\Avenue\Router)
 ->AddRoute('{@}//index','Routes\Home::Index')
+->AddRoute('{@}//nui','Routes\Nui::Index')
+->AddRoute('{@}//nui/([a-z]+)','Routes\Nui::Docs')
 ->AddRoute('{@}//(@)','Routes\Home::NotFound')
 ->Run();

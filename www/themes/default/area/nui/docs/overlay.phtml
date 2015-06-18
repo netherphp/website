@@ -1,0 +1,25 @@
+<script src="/code/nui/overlay/intro.js"></script>
+
+<div class="PageSection SplashSection"><div>
+	<h2>NUI.Overlay</h2>
+	<p>A big thing that covers the entire page, blocking access to anything under it. You put important things inside.</p>
+	<p style="text-align:center;"><a href="#" class="Button" onclick="return Intro_ShowExampleOverlay();">show me</a></p>
+	<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/nui/overlay/intro.js',PROJECT_ROOT))) ?></pre>
+</div></div>
+
+<div class="PageSection"><div>
+	<p>On its own, this widget may or may not be too terribly useful. That really depends up to your imagination.
+	The main utility of this is to create a modal interface which denies access to anything below until it is delt
+	with. The primary use case for this is tossing a NUI.Dialog inside of it.</p>
+</div></div>
+
+<div class="PageSection"><div>
+	<h2 class="NetherHeader">Constructor</h2>
+	<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/nui/overlay/construct.js',PROJECT_ROOT))) ?></pre>
+</div></div>
+
+<div class="PageSection"><div>
+	<h2 class="NetherHeader">Methods</h2>
+	<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/nui/overlay/methods.js',PROJECT_ROOT))) ?></pre>
+</div></div>
+
