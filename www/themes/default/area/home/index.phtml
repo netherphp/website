@@ -1,85 +1,25 @@
 
 <div class="PageSection SplashSection SplashGraphicHome"><div>
-	<h2>httpster website.</h2>
-	<p>by now you should be intrigued.</p>
-	<p style="text-align:center;"><a id="lol" href="#lol" class="Button">hell yeah!</a></p>
-</div></div>
-
-<div class="PageSection PromoSection"><div>
-	<p>Nether is a small componentised framework aimed at solving a few annoying tasks in web development. It does not need to be a full application stack, which makes it perfect for keeping control of your application while pushing off some boring tasks into the nether.</p>
-
-	<div class="TextCenter" style="font-size:0.8em;">
-		<i class="fa fa-check"></i> PHP 5.4 &nbsp; &nbsp;
-		<i class="fa fa-check"></i> PHP 5.5 &nbsp; &nbsp;
-		<i class="fa fa-check"></i> PHP 5.6 &nbsp; &nbsp;
-		<i class="fa fa-check"></i> PHP 7 &nbsp; &nbsp;
-		<i class="fa fa-check"></i> HHVM
-	</div>
-</div></div>
-
-<div class="PageSection PromoSection"><div>
-	<ul class="ListStyleNone ListInline ButtonListAlt TextCenter">
-		<li><a href="#database" class="Button ButtonAlt">
-			<i class="fa fa-database"></i> Database<br />
-			<img class="ButtonButton" src="https://img.shields.io/packagist/v/netherphp/database.svg" alt="" />
-		</a></li>
-		<li>
-			<a href="#avenue" class="Button ButtonAlt">
-			<i class="fa fa-road"></i> Avenue<br />
-			<img class="ButtonButton" src="https://img.shields.io/packagist/v/netherphp/avenue.svg" alt="" />
-		</a></li>
-		<li>
-			<a href="#input" class="Button ButtonAlt">
-			<i class="fa fa-check-square"></i> Input<br />
-			<img class="ButtonButton" src="https://img.shields.io/packagist/v/netherphp/input.svg" alt="" />
-		</a></li>
-		<li>
-			<a href="#object" class="Button ButtonAlt">
-			<i class="fa fa-cubes"></i> Object<br />
-			<img class="ButtonButton" src="https://img.shields.io/packagist/v/netherphp/object.svg" alt="" />
-		</a></li>
-		<li>
-			<a href="#option" class="Button ButtonAlt">
-			<i class="fa fa-gear"></i> Option<br />
-			<img class="ButtonButton" src="https://img.shields.io/packagist/v/netherphp/option.svg" alt="" />
-		</a></li>
-	</ul>
-</div></div>
-
-<div class="PageSection"><div>
-	<h2 id="database" class="NetherHeader">nether database</h2>
-	<script src="https://gist.github.com/bobmajdakjr/513af441becbb2eac978.js"></script>
-	<p>The database library wraps PDO, allowing you to connect to any databases which you have installed PDO drivers for. No need to store a global database instance anywhere - when you need database access, you create a local reference (new Nether\Database) and the library will manage the connections for you and reuse them when possible.</p>
-	<p>This library also contains an SQL generator called Verse. For most simple queries that you do on a daily basis, Verse provides a chained API for writing SQL without having to actually write SQL directly in the code. I am pretty sure all of us know by now it is IMPOSSIBLE to actually format SQL inline without it being a steaming pile of crap. Make pretty code and forget the entire concept of needing huge ugly DBAL in your codebase.</p>
-	<p><a class="Button" href="https://github.com/netherphp/database/blob/master/README.md">More Database Info</a></p>
-</div></div>
-
-<div class="PageSection"><div>
-	<h2 id="avenue" class="NetherHeader">nether avenue</h2>
-	<script src="https://gist.github.com/bobmajdakjr/e92ebe0e388022dcf721.js"></script>
-	<p>The routing library allows you to funnel requests to various controllers based on regular expression matching - which you can define using straight Perl regex or make use of the shortcuts provided. It is designed to handle everything from simple single domain sites to giant multidomain cluster bombs.</p>
-	<p>The main trick here is that you pipe all unexpected traffic to your index.php file which then routes requests in the direction they need to go. Your index.php can be as simple as the example code to the right.</p>
-	<p><a class="Button" href="https://github.com/netherphp/avenue/blob/master/README.md">More Avenue Info</a></p>
-</div></div>
-
-<div class="PageSection"><div>
-	<h2 id="input" class="NetherHeader">nether input</h2>
-	<script src="https://gist.github.com/bobmajdakjr/4256a89a75d1f3a8fe19.js"></script>
-	<p>Handling input can be messy, long, and complicated. Let the Nether Input library at least help you group that logic together, away from what the app is actually trying to do. This example is stupid - the library while small is very flexible. With a little imagination you will have nice input handling code in no time.</p>
-	<p><a class="Button" href="https://github.com/netherphp/input/blob/master/README.md">More Input Info</a></p>
-</div></div>
-
-<div class="PageSection"><div>
 	<div class="DivTwoColumn">
 		<div>
-			<h2 id="object" class="NetherHeader">nether object</h2>
-			<p>Nether Object is a core component of most of the framework. This library provides the ability to have self-constructing objects from unpreferred datasets. What I mean by this is, it allows you to do things like force typecast on creation, easily turn field names from your database that_look_like_this into things ThatLookLikeThis, and ensure that the minimum properties exist and if not, give them a defined default value.</p>
-			<p><a href="https://github.com/netherphp/object/blob/master/README.md" class="Button">More Object Info</a></p>
+			<h2>NPF</h2>
+			<p>Nether PHP Framework</p>
+			<p><a href="/npf/" class="Button">Learn More...</a></p>
 		</div>
 		<div>
-			<h2 id="option" class="NetherHeader">nether option</h2>
-			<p>This is a global configuration manager... it basically maintains a singleton pattern so that you can access settings throughout the application regardless of scope or globals.</p>
-			<p><a href="https://github.com/netherphp/option/blob/master/README.md" class="Button">More Option Info</a></p>
+			<h2>NUI</h2>
+			<p>Nether UI (Javascript)</p>
+			<p><a href="/nui/" class="Button">Learn More...</a></p>
 		</div>
 	</div>
+</div></div>
+
+<div class="PageSection PromoSection"><div>
+	<p>Often as developers we deal with a lot of third party projects that we then duct tape together to try and form a product with as little <em>&quot;effort&quot;</em> as possible. The problem is the more junk you bolt onto your project that was not designed to work together the harder the app becomes to maintain - or heaven forbid - learn to use.</p>
+	<p>Developers also fail quite often. While creating viable projects that do what they are advertised - how hard to use are these projects? Why would this function require 6 arguments when all I want is for it to do one thing? Life should be easy.</p>
+	<p>These two projects are the brainchild of a new methodology I am taking to programming. After producing a new feature I stop and analyise the APIs involved, asking myself things like <em>&quot;why did I have to do all this to use this feature?&quot;</em> - if the answer I give myself is ANYTHING except <em>&quot;because that is as simple as it could be&quot;</em>, then I go back to work and make it simpiler. It is NOT about magic blackbox code, rather it is about code that makes the computer do its one job - work for you.</p>
+	<p>The goal of this framework is to handle a lot of the mundane work that goes into web development, leaving it clean to write your own reusable code instead of strapping on a bunch of packages you've never used. This may sound like a not-invented-here-lomaniac attitude, but in reality it is more i-want-to-write-code-not-read-documents-for-days mindset.</p>
+	<p>Take for example PHP's PDO extension. Have you ever tried to use it? Why can't I bind multiple named arguments at once? There isn't a single thing about PDO that makes me stop and think <em>&quot;this is an amazing piece of engineering&quot;</em>. I consider this a problem, and I consider myself a problem solver. In the Nether Database module I have attempted to solve everything about DB work that has pissed me off over the years. This is just one example. At the end of the day, all of us will give in at one point and push some sucky code. I sure didn't nail it first try.</p>
+	<p>I invite you to try my code (all of which is open sourced under the BSD 3-Clause licence) and if you find something that isn't easy enough, I want you to call me out on it. I also understand that without documentation for the kitchen sink adoption rates may be slow. I'm working on it. But here is the thing - I don't care if Nether powers half the web or not. What I really want is for developers to be more in tune with how their own projects work and create APIs that actually make sense. I can only rant on Twitter so hard - so now I intend to set an example.</p>
+	<P><em>-- <a href="http://twitter.com/bobmajdakjr">@bobmajdakjr</a></em></p>
 </div></div>

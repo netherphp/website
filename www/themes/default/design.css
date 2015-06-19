@@ -17,6 +17,8 @@ a:link, a:visited {
 	color:#5884B5;
 }
 
+em { color:#5884B5; font-style:italic; }
+
 h1,h2,h3,h4 {
 	line-height:normal;
 	margin:0px;
@@ -92,6 +94,7 @@ a.ButtonAlt:hover { background:#D1ADD5; color:#000; }
 .SplashGraphicHome { background-image:url(gfx/splash-home.jpg); }
 
 .PromoSection { font-size:1.5em; }
+.TextCenter { text-align:center; }
 
 .DivTwoColumn { overflow:auto; }
 .DivTwoColumn > div:nth-child(1) { float:left; padding-right:20px; width:50%; }

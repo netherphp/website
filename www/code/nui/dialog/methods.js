@@ -33,6 +33,16 @@ Dialog.Hide();
 force the widget to hide itself.
 //*/
 
+Dialog.SetLoading(state);
+/*//
+@argv Boolean State
+@return self
+tell the dialog to tweak its display to suggest that it has to wait for
+something to complete. all it really does is swap the buttons with any
+images you added to the button area - so like a loader.gif thing. nice for
+when you have to wait on an async api call or something.
+//*/
+
 Dialog.Show();
 /*//
 @return self

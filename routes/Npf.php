@@ -5,12 +5,12 @@ use \Routes;
 use \FSHL;
 use \Nether;
 
-class Nui extends Routes\Common\PublicWeb {
+class Npf extends Routes\Common\PublicWeb {
 	
-	public $Name = 'nui';
+	public $Name = 'npf';
 
 	public function Index() {
-		$this->Surface->Area('nui/index');
+		$this->Surface->Area('npf/index');
 		return;
 	}
 	
@@ -26,7 +26,7 @@ class Nui extends Routes\Common\PublicWeb {
 			$scope['php'] = $php;
 		});
 
-		$this->Surface->Area("nui/docs/{$section}");	
+		$this->Surface->Area("npf/docs/{$section}");	
 		return;
 	}
 
