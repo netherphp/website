@@ -42,15 +42,21 @@ pre:last-child
 
 a.Button { background:#5884B5; color:#fff; display:inline-block; padding:10px; overflow:auto; text-decoration:none; }
 a.Button:hover { background:#D1ADD5; color:#000; }
-a.ButtonAlt { background:#262626; }
+a.ButtonAlt { background:#888; }
 a.ButtonAlt:hover { background:#D1ADD5; color:#000; }
 
 .Button > i { margin-right:4px; }
 .ButtonButton { margin-top:8px; }
+.ButtonFull { display:block; }
 
 .gist { float:right; margin:0px 0px 32px 20px; }
 .gist .line,
 .gist .line-number { font-family:monospace !important; }
+
+.ButtonList { list-style-type:none; margin:0px; padding:0px; }
+.ButtonList li { display:block; margin:0px 0px 6px 0px; padding:0px; }
+.ButtonList li:last-of-type { margin-bottom:0px; }
+.ButtonList li a { display:block; }
 
 .NetherHeader { border-top:4px solid #5884B5; display:inline-block; margin-bottom:20px; text-transform:lowercase; }
 .NetherHeader a { color:#fff; text-decoration:none; }
