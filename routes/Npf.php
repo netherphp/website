@@ -10,6 +10,7 @@ class Npf extends Routes\Common\PublicWeb {
 	public $Name = 'npf';
 
 	public function Index() {
+		$this->Surface->Set('page-title','Nether PHP Framework');
 		$this->Surface->Area('npf/index');
 		return;
 	}
@@ -25,8 +26,17 @@ class Npf extends Routes\Common\PublicWeb {
 			$php->setLexer(new FSHL\Lexer\Php);
 			$scope['php'] = $php;
 		});
-
-		$this->Surface->Area("npf/docs/{$section}");	
+		
+		$this->Surface->Set('page-title',sprintf(
+			'%s - NPF',
+			ucwords(str_replace('-',' ',$section))
+		));
+		
+		try { $this->Surface->Area("npf/docs/{$section}"); }
+		catch(\Exception $e) {
+			$this->Surface->Set('page-title','Document Not Found');
+		}
+			
 		return;
 	}
 

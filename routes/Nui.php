@@ -10,6 +10,7 @@ class Nui extends Routes\Common\PublicWeb {
 	public $Name = 'nui';
 
 	public function Index() {
+		$this->Surface->Set('page-title','Nether UI');
 		$this->Surface->Area('nui/index');
 		return;
 	}
@@ -26,7 +27,16 @@ class Nui extends Routes\Common\PublicWeb {
 			$scope['php'] = $php;
 		});
 
-		$this->Surface->Area("nui/docs/{$section}");	
+		$this->Surface->Set('page-title',sprintf(
+			'NUI.%s - Nether UI',
+			ucwords(str_replace('-',' ',$section))
+		));
+		
+		try { $this->Surface->Area("nui/docs/{$section}"); }
+		catch(\Exception $e) {
+			$this->Surface->Set('page-title','Document Not Found');
+		}
+
 		return;
 	}
 
