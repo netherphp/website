@@ -1,5 +1,6 @@
 <script src="/code/nui/dialog/intro.js"></script>
 <script src="/code/nui/dialog/example-modal.js"></script>
+<script src="/code/nui/dialog/example-loading.js"></script>
 
 <div class="PageSection SplashSection"><div>
 	<h2>NUI.Dialog</h2>
@@ -29,6 +30,14 @@
 	<h2 class="NetherHeader">Example: Modal Dialog</h2>
 	<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/nui/dialog/example-modal.js',PROJECT_ROOT))) ?></pre>
 	<div class="TextCenter">
-		<a href="#" class="Button" onclick="return LocalExampleModalDialog();">click me</a>
+		<a href="#" class="Button" onclick="return LocalExampleModalDialog();">click me to see</a>
+	</div>
+</div></div>
+
+<div class="PageSection"><div>
+	<h2 class="NetherHeader">Example: Loading Dialog</h2>
+	<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/nui/dialog/example-loading.js',PROJECT_ROOT))) ?></pre>
+	<div class="TextCenter">
+		<a href="#" class="Button" onclick="return LocalExampleLoadingDialog();">click me to see</a>
 	</div>
 </div></div>

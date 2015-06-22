@@ -33,7 +33,7 @@ Dialog.Hide();
 force the widget to hide itself.
 //*/
 
-Dialog.SetLoading(state);
+Dialog.SetBusy(state);
 /*//
 @argv Boolean State
 @return self

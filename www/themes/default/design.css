@@ -37,6 +37,10 @@ p:last-child,
 pre:last-child
 { margin-bottom:0px; }
 
+pre {
+	tab-size:5;
+}
+
 .TextCenter { text-align:center; }
 
 /*//////////////////////////////////////////////////////////////////////////////
