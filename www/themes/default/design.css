@@ -96,6 +96,9 @@ a.ButtonAlt:hover { background:#D1ADD5; color:#000; }
 .SplashSection h2 { font-size:3.0em; }
 .SplashSection p { font-size:1.5em; }
 .SplashGraphicHome { background-image:url(gfx/splash-home.jpg); }
+.SplashGraphicDocs { background-image:url(gfx/splash-earth.jpg); }
+.SplashGraphicNUI { background-image:url(gfx/splash-nui.jpg); }
+.SplashGraphicNPF { background-image:url(gfx/splash-npf.jpg); }
 
 .PromoSection { font-size:1.5em; }
 .TextCenter { text-align:center; }
