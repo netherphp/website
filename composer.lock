@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "550c6b4069d1be843debe037f0ee753e",
+    "hash": "504a1effaa91470c90f98fea57337d94",
     "packages": [
         {
             "name": "andrewsville/php-token-reflection",
@@ -146,6 +146,43 @@
             "time": "2015-03-01 12:03:08"
         },
         {
+            "name": "netherjs/nui",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netherjs/nui.git",
+                "reference": "c851d277c77fc968f87e46e13fe02c31563a12fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netherjs/nui/zipball/c851d277c77fc968f87e46e13fe02c31563a12fb",
+                "reference": "c851d277c77fc968f87e46e13fe02c31563a12fb",
+                "shasum": ""
+            },
+            "require": {
+                "netherphp/onescript": "^1.1.1"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Bob Majdak Jr",
+                    "email": "bob@nether.io",
+                    "homepage": "http://nether.io/nui",
+                    "role": "developer"
+                }
+            ],
+            "description": "A basic Get-It-Done Javascript UI toolkit",
+            "keywords": [
+                "JS",
+                "ui"
+            ],
+            "time": "2015-07-20 03:10:00"
+        },
+        {
             "name": "netherphp/avenue",
             "version": "v1.0.1",
             "source": {
@@ -237,6 +274,49 @@
                 "php"
             ],
             "time": "2015-05-19 21:59:32"
+        },
+        {
+            "name": "netherphp/console",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netherphp/console.git",
+                "reference": "85ed9eb658ac2fab1fe7c8f0f8372585af6e952c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netherphp/console/zipball/85ed9eb658ac2fab1fe7c8f0f8372585af6e952c",
+                "reference": "85ed9eb658ac2fab1fe7c8f0f8372585af6e952c",
+                "shasum": ""
+            },
+            "require": {
+                "netherphp/object": "~1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Nether\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Bob Majdak Jr",
+                    "email": "bob@nether.io",
+                    "homepage": "http://nether.io",
+                    "role": "developer"
+                }
+            ],
+            "description": "A CLI Parser",
+            "keywords": [
+                "cli",
+                "console",
+                "php"
+            ],
+            "time": "2015-07-24 17:29:56"
         },
         {
             "name": "netherphp/database",
@@ -414,6 +494,57 @@
                 "php"
             ],
             "time": "2014-12-31 23:59:13"
+        },
+        {
+            "name": "netherphp/onescript",
+            "version": "v1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netherphp/onescript.git",
+                "reference": "9c59e24283bd9c4e886bf87ee7e0fc7534b1038c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netherphp/onescript/zipball/9c59e24283bd9c4e886bf87ee7e0fc7534b1038c",
+                "reference": "9c59e24283bd9c4e886bf87ee7e0fc7534b1038c",
+                "shasum": ""
+            },
+            "require": {
+                "netherphp/console": "^1.0.1",
+                "netherphp/object": "^1.0.0"
+            },
+            "require-dev": {
+                "codeception/codeception": "~2.0.13",
+                "codeception/verify": "~0.2.0"
+            },
+            "bin": [
+                "bin/nether-onescript"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Nether\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Bob Majdak Jr",
+                    "email": "bob@nether.io",
+                    "homepage": "http://nether.io",
+                    "role": "developer"
+                }
+            ],
+            "description": "A silly Javascript Compiler.",
+            "keywords": [
+                "compiler",
+                "javascript",
+                "php"
+            ],
+            "time": "2015-07-22 16:59:14"
         },
         {
             "name": "netherphp/option",

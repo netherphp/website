@@ -5,17 +5,45 @@
 </div></div>
 
 <div class="PageSection"><div>
-	<h2 class="NetherHeader">A Problem</h2>
-	<p>One of the simplest ways to demonstrate the utility of OneScript is with jQuery. Love it or hate it, if you have used it you cannot really deny that it can get pretty messy when you start bolting on third-party extensions to it willy nilly. In a rush we will just start appending more script tags after the original jQuery script, and before we know it we have this large slow messy pile of separate scripts probably killing the mobile browsers.</p>
-	<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/npf/onescript/problem.txt',PROJECT_ROOT))) ?></pre>
-	<p>This is a problem especally for low power devices for two main reasons.</p>
-	<p>First, depending on the resources available to the browser and the configuration of the server, the browser may actually establish multiple socket connections to the server to download the scripts. Establishing connections are much slower than the act of actually downloading small text files.</p>
-	<p>Second, because of the first, the browser may have to delay execution until it has all the scripts ready to go. This could give your page the appearance of <em>looking</em> ready to go, even though it is unresponsive until the rest of the scripts finish in the background.</p>
+	<h2 class="NetherHeader">About</h2>
+	<p>OneScript is a utility designed to help you optmise the distribution of your front-end scripting. Here are a few easy to grok cases where OneScript can help you out.</p>
+</div></div>
+
+<div class="PageSection NUI-Folder"><div>
+	<h2 class="NetherHeader NUI-Folder-Title">
+		<i class="fa fa-caret-right"></i>
+		Problem: Handling a messy pile of jQuery plugins.
+	</h2>
+	<div class="NUI-Folder-Inner">
+		<p>One of the simplest ways to demonstrate the utility of OneScript is with jQuery. Love it or hate it, if you have used it you cannot really deny that it can get pretty messy when you start bolting on third-party extensions to it willy nilly. In a rush we will just start appending more script tags after the original jQuery script, and before we know it we have this large slow messy pile of separate scripts probably killing the mobile browsers.</p>
+		<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/npf/onescript/problem.txt',PROJECT_ROOT))) ?></pre>
+		<p>This is a problem especally for low power devices for two main reasons.</p>
+		<p>First, depending on the resources available to the browser and the configuration of the server, the browser may actually establish multiple socket connections to the server to download the scripts. Establishing connections are much slower than the act of actually downloading small text files. Second, because of the first, the browser may have to delay execution until it has all the scripts ready to go. This could give your page the appearance of <em>looking</em> ready to go, even though it is unresponsive until the rest of the scripts finish in the background.</p>
+		<p>What if you could just load one script instead? One connection, one process of downloading and script preparation. Not only will the entire page (often) download faster, but it will be responsive faster. The browser may not have to delay execution - meaning your jQuery(document).ready() will execute sooner.</p>
+		<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/npf/onescript/answer.txt',PROJECT_ROOT))) ?></pre>
+		<p>This is what OneScript helps you do, as well as making it easy to update those compiled scripts later.</p>
+		<p class="TextCenter"><a href="/npf/onescript/jquery" class="Button">Would you like to know more?</a></p>
+	</div>
+</div></div>
+
+<div class="PageSection NUI-Folder"><div>
+	<h2 class="NetherHeader NUI-Folder-Title">
+		<i class="fa fa-caret-right"></i>
+		Problem: Using Composer to install Javascript assets.
+	</h2>
+	<div class="NUI-Folder-Inner">
+		<p>Composer was not designed to install Javascript or any other client-side resources. It does however work marvelously. Why bother cluttering up the project with NPM or Bower when we can just work with what we already have?</p>
+		<p>With very little effort you can create a Composer package for your Javascript resources and deploy them to the public web space with OneScript. This site you are browsing now uses OneScript to deploy NUI.</p>
+		<p class="TextCenter"><a href="/npf/onescript/composer" class="Button">Would you like to know more?</a></p>
+	</div>
+</div></div>
+
+<!--
+<div class="PageSection"><div>
+	<script async class="speakerdeck-embed" data-id="2a123384df4e4bc5a518004ab88bde4f" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 </div></div>
 
 <div class="PageSection"><div>
-	<h2 class="NetherHeader">An Answer</h2>
-	<p>What if you could just load one script instead? One connection, one process of downloading and script preparation. Not only will the entire page (often) download faster, but it will be responsive faster. The browser may not have to delay execution - meaning your jQuery(document).ready() will execute sooner.</p>
-	<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/npf/onescript/answer.txt',PROJECT_ROOT))) ?></pre>
-	<p>This is what OneScript helps you do, as well as making it easy to update those compiled scripts later.</p>
+	<script async class="speakerdeck-embed" data-id="4901827409ac4a7e9980474a30f3b471" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 </div></div>
+-->

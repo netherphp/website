@@ -64,7 +64,7 @@ a.ButtonAlt:hover { background:#D1ADD5; color:#000; }
 .ButtonList li:last-of-type { margin-bottom:0px; }
 .ButtonList li a { display:block; }
 
-.NetherHeader { border-top:4px solid #5884B5; display:inline-block; margin-bottom:20px; text-transform:lowercase; }
+.NetherHeader { border-top:4px solid #5884B5; display:inline-block; margin-bottom:20px; }
 .NetherHeader a { color:#fff; text-decoration:none; }
 
 /*//////////////////////////////////////////////////////////////////////////////
@@ -88,7 +88,7 @@ a.ButtonAlt:hover { background:#D1ADD5; color:#000; }
 //////////////////////////////////////////////////////////////////////////////*/
 
 .PageSection { clear:both; margin:0px; overflow:auto; padding:0px; }
-.PageSection > div { margin:0px auto; padding:50px 0px; width:768px; }
+.PageSection > div { margin:0px auto; padding:50px 0px; width:900px; }
 .PageSection:nth-of-type(2n) { background:#262626; }
 
 .SplashSection { background-color:#555; background-position:center center; background-size:cover; text-align:center; }
