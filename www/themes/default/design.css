@@ -97,6 +97,12 @@ a.ButtonAlt:hover { background:#D1ADD5; color:#000; }
 .PageSection > div { margin:0px auto; padding:50px 0px; width:900px; }
 .PageSection:nth-of-type(2n) { background:#262626; }
 
+.PageNavigation { background:rgba(0,0,0,0.5); clear:both; margin:0px; overflow:auto; padding:0px; }
+.PageNavigation > ul { list-style-type:none; margin:10px auto; padding:0px; width:900px; }
+.PageNavigation > ul > li { display:inline-block; margin:0px; padding:5px; }
+.PageNavigation > ul > li > a { color:#ccc; text-decoration:none; }
+.PageNavigation > ul > li > a > i { color:#fff; }
+
 .SplashSection { background-color:#555; background-position:center center; background-size:cover; text-align:center; }
 .SplashSection > div { min-height:200px; padding:20px 0px 50px 0px; }
 .SplashSection h2 { font-size:3.0em; }
