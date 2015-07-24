@@ -1,0 +1,18 @@
+{
+    "AddFileHeader": true,
+    "AddScriptHeader": true,
+    "Directories": [
+        "libs"
+    ],
+    "DistDir": "dist",
+    "Extensions": [
+        "js"
+    ],
+    "Files": [
+        "jquery.min.js"
+    ],
+    "Minify": false,
+    "OutputFile": "jquery-et-al.js",
+    "OutputMinFile": "jquery-et-al.min.js",
+    "Print": false
+}

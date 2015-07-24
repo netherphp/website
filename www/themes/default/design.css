@@ -37,9 +37,10 @@ p:last-child,
 pre:last-child
 { margin-bottom:0px; }
 
-pre {
-	tab-size:5;
-}
+code { background:#1E1E1E; border-top:3px solid #5884B5; border-radius:10px; color:#eee; padding:0px 8px 2px; font-size:0.75em; }
+pre { tab-size:5; }
+
+ol li { margin-bottom:10px; }
 
 .TextCenter { text-align:center; }
 
@@ -111,4 +112,4 @@ a.ButtonAlt:hover { background:#D1ADD5; color:#000; }
 .ListStyleNone li { margin:0px; padding:0px }
 .ListInline li { display:inline-block; }
 
-.CodeBlock { background:#ddd; border-left:4px solid #5884B5; border-radius:10px; font-size:12px; padding:10px; text-align:left; }
+.CodeBlock { background:#1E1E1E; border-left:4px solid #5884B5; border-radius:10px; font-size:12px; padding:10px; text-align:left; }

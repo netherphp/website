@@ -42,9 +42,9 @@
 .cpp-preproc {color: #c0c0c0;}
 
 /* HTML */
-.html-tag {color: #598527; font-weight: bold;}
-.html-tagin {color: #89a315}
-.html-quote {color: #598527; font-weight: bold;}
+.html-tag {color: #3F9CCA; font-weight: bold;}
+.html-tagin {color: #9CDCFE}
+.html-quote {color: #CE9178; font-weight: bold;}
 .html-comment {color: #999999; background-color: #f1fae4;}
 .html-entity {color: #89a315;}
 
@@ -56,10 +56,10 @@
 .java-preproc {color: #c0c0c0;}
 
 /* Javascript */
-.js-out {color: #888;}
-.js-keywords1 {color: #444; font-weight: bold;}
-.js-num {color: #575757;}
-.js-quote {color: #575757; font-weight: bold;}
+.js-out {color: #ccc;}
+.js-keywords1 {color: #3F9CCA; font-weight: bold;}
+.js-num {color: #3F9CCA;}
+.js-quote {color: #CE9178; font-weight: bold;}
 .js-comment {color: #aaa; }
 
 /* Neon */

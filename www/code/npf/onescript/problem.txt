@@ -1,7 +1,8 @@
 <script src="/share/jquery/jquery.min.js"></script>
-<script src="/share/jquery/jquery.purl.min.js"></script>
-<script src="/share/jquery/jquery.cookie.min.js"></script>
-<script src="/share/jquery/jquery.easing.min.js"></script>
-<script src="/share/jquery/jquery.unslider.min.js"></script>
+<script src="/share/jquery/jquery.labelauty.min.js"></script>
+<link href="/share/jquery/jquery.tooltipster.css" rel="stylesheet" type="text/css" />
+<script src="/share/jquery/jquery.tooltipster.min.js"></script>
 <script src="/share/jquery/jquery.typeahead.min.js"></script>
-<script src="/share/jquery/jquery.yourmom.min.js"></script>
+<script src="/share/jquery/jquery.unslider.min.js"></script>
+<link href="/share/jquery/jquery.unslider.css" rel="stylesheet" type="text/css" />
+<script src="/share/jquery/jquery.vide.min.js"></script>

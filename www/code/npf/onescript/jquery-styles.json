@@ -1,0 +1,16 @@
+{
+    "AddFileHeader": true,
+    "AddScriptHeader": true,
+    "Directories": [
+        "libs"
+    ],
+    "DistDir": "dist",
+    "Extensions": [
+        "css"
+    ],
+    "Files": [],
+    "Minify": false,
+    "OutputFile": "jquery-et-al.css",
+    "OutputMinFile": "jquery-et-al.min.css",
+    "Print": false
+}

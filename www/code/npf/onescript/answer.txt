@@ -1,1 +1,2 @@
-<script src="/share/jquery/jquery-et-al.js"></script>
+<link href="/share/jquery/dist/jquery-et-al.css" rel="stylesheet" type="text/css" />
+<script src="/share/jquery/dist/jquery-et-al.js"></script>
