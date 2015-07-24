@@ -25,6 +25,10 @@ class Npf extends Routes\Common\PublicWeb {
 			$php = new FSHL\Highlighter(new FSHL\Output\Html);
 			$php->setLexer(new FSHL\Lexer\Php);
 			$scope['php'] = $php;
+			
+			$html = new FSHL\Highlighter(new FSHL\Output\Html);
+			$html->setLexer(new FSHL\Lexer\Html);
+			$scope['html'] = $html;
 		});
 		
 		$this->Surface->Set('page-title',sprintf(

@@ -1,0 +1,7 @@
+<script src="/share/jquery/jquery.min.js"></script>
+<script src="/share/jquery/jquery.purl.min.js"></script>
+<script src="/share/jquery/jquery.cookie.min.js"></script>
+<script src="/share/jquery/jquery.easing.min.js"></script>
+<script src="/share/jquery/jquery.unslider.min.js"></script>
+<script src="/share/jquery/jquery.typeahead.min.js"></script>
+<script src="/share/jquery/jquery.yourmom.min.js"></script>

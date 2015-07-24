@@ -147,16 +147,16 @@
         },
         {
             "name": "netherphp/avenue",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/avenue.git",
-                "reference": "6921774e71f1f81cc614626c0d3cda82eaff2861"
+                "reference": "9d37353686277a31cdbba57e0ccb28aa4cec0f32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/avenue/zipball/6921774e71f1f81cc614626c0d3cda82eaff2861",
-                "reference": "6921774e71f1f81cc614626c0d3cda82eaff2861",
+                "url": "https://api.github.com/repos/netherphp/avenue/zipball/9d37353686277a31cdbba57e0ccb28aa4cec0f32",
+                "reference": "9d37353686277a31cdbba57e0ccb28aa4cec0f32",
                 "shasum": ""
             },
             "require": {
@@ -190,7 +190,7 @@
                 "php",
                 "router"
             ],
-            "time": "2015-05-05 19:43:29"
+            "time": "2015-05-21 02:45:24"
         },
         {
             "name": "netherphp/cache",
@@ -198,18 +198,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/cache.git",
-                "reference": "8258dfe264d25d79936fa5c24db887fec2ad8f58"
+                "reference": "8a0bb222467f2fc6860a8ead136dc6e2de4f92df"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/netherphp/cache/zipball/8a0bb222467f2fc6860a8ead136dc6e2de4f92df",
-                "reference": "8258dfe264d25d79936fa5c24db887fec2ad8f58",
+                "reference": "8a0bb222467f2fc6860a8ead136dc6e2de4f92df",
                 "shasum": ""
             },
             "require": {
-                "netherphp/object": "1.*",
-                "netherphp/option": "1.*",
-                "netherphp/stash": "dev-master",
+                "netherphp/object": "~1.0.0",
+                "netherphp/option": "~1.0.0",
+                "netherphp/stash": "~1.0.0",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -236,20 +236,20 @@
                 "nether",
                 "php"
             ],
-            "time": "2015-03-31 21:21:49"
+            "time": "2015-05-19 21:59:32"
         },
         {
             "name": "netherphp/database",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/database.git",
-                "reference": "be9c9451d8056ea58b2f9b4039b424d3b23af479"
+                "reference": "ace3146f2ac44b92da2f2cd262a61cf9a323384c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/database/zipball/be9c9451d8056ea58b2f9b4039b424d3b23af479",
-                "reference": "be9c9451d8056ea58b2f9b4039b424d3b23af479",
+                "url": "https://api.github.com/repos/netherphp/database/zipball/ace3146f2ac44b92da2f2cd262a61cf9a323384c",
+                "reference": "ace3146f2ac44b92da2f2cd262a61cf9a323384c",
                 "shasum": ""
             },
             "require": {
@@ -280,20 +280,20 @@
                 "database",
                 "php"
             ],
-            "time": "2015-03-09 05:29:50"
+            "time": "2015-05-21 20:20:24"
         },
         {
             "name": "netherphp/input",
-            "version": "v1.0.0",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/input.git",
-                "reference": "a6da3f67c4e573e5569f3df07f69326ecf153036"
+                "reference": "4bea679011b1dffdb2056b075ba4c9763e5aabea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/input/zipball/a6da3f67c4e573e5569f3df07f69326ecf153036",
-                "reference": "a6da3f67c4e573e5569f3df07f69326ecf153036",
+                "url": "https://api.github.com/repos/netherphp/input/zipball/4bea679011b1dffdb2056b075ba4c9763e5aabea",
+                "reference": "4bea679011b1dffdb2056b075ba4c9763e5aabea",
                 "shasum": ""
             },
             "require": {
@@ -329,20 +329,20 @@
                 "php",
                 "sanitisation"
             ],
-            "time": "2015-05-13 05:33:24"
+            "time": "2015-05-27 00:07:04"
         },
         {
             "name": "netherphp/ki",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/ki.git",
-                "reference": "c9781ee6a342028bc0f76fc3846f33b1bb7c66d5"
+                "reference": "ac6bc7925d1cc232f12ce1ba2fb1c570b32b3f39"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/netherphp/ki/zipball/ac6bc7925d1cc232f12ce1ba2fb1c570b32b3f39",
-                "reference": "c9781ee6a342028bc0f76fc3846f33b1bb7c66d5",
+                "reference": "ac6bc7925d1cc232f12ce1ba2fb1c570b32b3f39",
                 "shasum": ""
             },
             "require": {
@@ -371,7 +371,7 @@
                 "event",
                 "php"
             ],
-            "time": "2014-03-23 19:11:21"
+            "time": "2015-05-18 00:13:43"
         },
         {
             "name": "netherphp/object",
@@ -459,25 +459,20 @@
         },
         {
             "name": "netherphp/project",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/project.git",
-                "reference": "92cf3889c1419ee7487c943464a24bc2b7f96028"
+                "reference": "4122f9c43a55a06befd16c6b1f153d53df26248d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/project/zipball/1ef76bbab68885c0f98f9c90f1c2204dae92c8c2",
-                "reference": "92cf3889c1419ee7487c943464a24bc2b7f96028",
+                "url": "https://api.github.com/repos/netherphp/project/zipball/4122f9c43a55a06befd16c6b1f153d53df26248d",
+                "reference": "4122f9c43a55a06befd16c6b1f153d53df26248d",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0"
-            },
-            "suggest": {
-                "netherphp/avenue": "Allows this to setup simple request routing/controllers for you.",
-                "netherphp/surface": "Allows this to setup the theme engine with a simple default theme for you.",
-                "netherphp/world": "Includes all the things real boot a full project in the Nether. If you require this you can ignore the other suggestions as they will be there."
             },
             "bin": [
                 "bin/nether-realboot"
@@ -490,7 +485,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-2-Clause"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -505,7 +500,7 @@
                 "php",
                 "project"
             ],
-            "time": "2014-05-31 01:47:28"
+            "time": "2015-05-16 02:48:39"
         },
         {
             "name": "netherphp/senpai",
@@ -513,18 +508,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/senpai.git",
-                "reference": "897410f194105ae44f8d6e35184a652fe42785bc"
+                "reference": "4776acc1106dbb00f71f85811d71fe96862687a5"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/netherphp/senpai/zipball/4776acc1106dbb00f71f85811d71fe96862687a5",
-                "reference": "897410f194105ae44f8d6e35184a652fe42785bc",
+                "reference": "4776acc1106dbb00f71f85811d71fe96862687a5",
                 "shasum": ""
             },
             "require": {
                 "andrewsville/php-token-reflection": "1.3.*",
                 "michelf/php-markdown": "1.*",
-                "netherphp/surface": "dev-master",
+                "netherphp/surface": "~1.0.0",
                 "php": ">=5.4.0"
             },
             "bin": [
@@ -553,20 +548,20 @@
                 "documentation",
                 "php"
             ],
-            "time": "2014-06-05 19:36:24"
+            "time": "2015-05-19 21:56:07"
         },
         {
             "name": "netherphp/stash",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/stash.git",
-                "reference": "7a8889430acd809fec2b09b339080cf83ff85d6d"
+                "reference": "882912a2c53735c930f4c7e8f508ebb23828cbbb"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/netherphp/stash/zipball/882912a2c53735c930f4c7e8f508ebb23828cbbb",
-                "reference": "7a8889430acd809fec2b09b339080cf83ff85d6d",
+                "reference": "882912a2c53735c930f4c7e8f508ebb23828cbbb",
                 "shasum": ""
             },
             "require": {
@@ -596,25 +591,26 @@
                 "php",
                 "stash"
             ],
-            "time": "2014-03-23 17:55:23"
+            "time": "2015-05-18 00:41:04"
         },
         {
             "name": "netherphp/surface",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/surface.git",
-                "reference": "b7df21465b2ff52951b9d249902d200ab36d59b5"
+                "reference": "e8209643b50ad36bda37c9854ae38a63c768623b"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/netherphp/surface/zipball/e8209643b50ad36bda37c9854ae38a63c768623b",
-                "reference": "b7df21465b2ff52951b9d249902d200ab36d59b5",
+                "reference": "e8209643b50ad36bda37c9854ae38a63c768623b",
                 "shasum": ""
             },
             "require": {
-                "netherphp/ki": "dev-master",
-                "netherphp/option": "1.*",
+                "netherphp/ki": "~1.0.0",
+                "netherphp/option": "~1.0.0",
+                "netherphp/stash": "~1.0.0",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -625,7 +621,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD-2-Clause"
+                "BSD-3-Clause"
             ],
             "authors": [
                 {
@@ -640,7 +636,7 @@
                 "php",
                 "template"
             ],
-            "time": "2015-03-04 04:06:01"
+            "time": "2015-05-26 23:51:00"
         },
         {
             "name": "netherphp/util",
@@ -690,12 +686,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/world.git",
-                "reference": "506539b9d0f64a464badc69a25fadc245dd13b6a"
+                "reference": "041882ad410e1d388935861ddf47de251ea46dc1"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/netherphp/world/zipball/041882ad410e1d388935861ddf47de251ea46dc1",
-                "reference": "506539b9d0f64a464badc69a25fadc245dd13b6a",
+                "reference": "041882ad410e1d388935861ddf47de251ea46dc1",
                 "shasum": ""
             },
             "require": {
@@ -703,13 +699,13 @@
                 "netherphp/cache": "@dev",
                 "netherphp/database": "~1.0.0",
                 "netherphp/input": "~1.0.0",
-                "netherphp/ki": "@dev",
+                "netherphp/ki": "~1.0.0",
                 "netherphp/object": "~1.0.0",
                 "netherphp/option": "~1.0.0",
-                "netherphp/project": "@dev",
+                "netherphp/project": "~1.0.0",
                 "netherphp/senpai": "@dev",
-                "netherphp/stash": "@dev",
-                "netherphp/surface": "@dev",
+                "netherphp/stash": "~1.0.0",
+                "netherphp/surface": "~1.0.0",
                 "netherphp/util": "@dev",
                 "php": ">=5.4.0"
             },
@@ -731,7 +727,7 @@
                 "nether",
                 "php"
             ],
-            "time": "2015-05-13 19:41:21"
+            "time": "2015-05-18 01:09:20"
         }
     ],
     "packages-dev": [],

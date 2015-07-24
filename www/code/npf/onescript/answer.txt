@@ -1,0 +1,1 @@
+<script src="/share/jquery/jquery-et-al.js></script>
