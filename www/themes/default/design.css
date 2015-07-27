@@ -45,7 +45,11 @@ pre:last-child
 code { background:#1E1E1E; border-top:3px solid #5884B5; border-radius:10px; color:#eee; padding:0px 8px 2px; font-size:0.75em; }
 pre { tab-size:5; }
 
-ol li { margin-bottom:10px; }
+ul li,
+ol li { margin-bottom:20px; }
+
+ul li:last-of-type,
+ol li:last-of-type { margin-bottom:0px; }
 
 .TextCenter { text-align:center; }
 

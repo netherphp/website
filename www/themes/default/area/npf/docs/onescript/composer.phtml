@@ -15,6 +15,31 @@ echo (new Website\Block\NavigationBar);
 ?>
 
 <div class="PageSection"><div>
-	TODO ^_^
+	<h3>Demo Project</h3>
+	<ul>
+		<li>Project Root: <tt>/opt/website</tt></li>
+		<li>Vendor Dir: <tt>/opt/website/vendor</tt></li>
+		<li>Public Web Root: <tt>/opt/website/www</tt> provides <tt>/</tt> (the web root)</li>
+		<li>jQuery Root: <tt>/opt/website/www/share/nui</tt> will provide <tt>/share/nui</tt></li>
+	</ul>
 </div></div>
 
+<div class="PageSection NUI-Folder"><div>
+	<h2 class="NetherHeader NUI-Folder-Title"><i class="fa fa-caret-right"></i> Make a Javascript package Composer-able.</h2>
+	<div class="NUI-Folder-Inner">
+		<p>To make a Composerable Javascript package you need to do two things.</p>
+		<p>The first thing is to make a new Composer package just like you would normally for any PHP code. Push it into Packagist if you want to share it, push it into a git repository if not. It is a little beyond the scope of this document to teach you how to do a Composer package from scratch, but if you look at <a href="https://github.com/netherjs/nui">the code I am going to use for this document</a> as an example, it should be pretty straight-forward.</p>
+		<p>However, you do need to take a little consideration to structure it ahead of time for OneScript. All your main script files should go in <tt>src</tt>, any plugins or extensions should go in <tt>src/libs</tt>, and any styles and images that the scripting needs should go in <tt>dist</tt>. That leads into the second thing to do: <a href="/npf/onescript/schema">build a OneScript project</a> file for it. There is really not much to it, if you are already familiar <a href="https://github.com/netherjs/nui/blob/master/onescript.json">the project file</a> can in-fact be mostly default.</p>
+	</div>
+</div></div>
+
+<div class="PageSection NUI-Folder"><div>
+	<h2 class="NetherHeader NUI-Folder-Title"><i class="fa fa-caret-right"></i> Install and Deploy.</h2>
+	<div class="NUI-Folder-Inner">
+		<p>Once you have published your package somewhere Composer can get to it, all you have to do is install it like any other package.</p>
+		<pre>require { "netherjs/nui":"^1.0.0" }</pre>
+		<p>After it is installed it is time to deploy it. We do this with the Nether OneScript CLI tool.</p>
+		<p><code>php vendor/bin/nether-onescript build vendor/netherjs/nui --deploy=www/share/nui</code></p>
+		<p>This command will make sure that the scripts in the NetherJS NUI package are up to date, and then deploy the resulting build into the <tt>www/share/nui</tt> directory. Any time this package updates all you have to do is redeploy it to the same location to get the new code publically accessible.</p>
+	</div>
+</div></div>

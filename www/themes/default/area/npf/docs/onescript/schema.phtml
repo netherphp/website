@@ -1,0 +1,89 @@
+<?php
+
+$this->Set('page-title','OneScript Project Schema');
+$this->Set('page-subtitle','The project build file defines how and where the project is built.');
+$this->Set('page-navigation',[
+	new Website\Item([ 'Name'=>'Home', 'URL'=>'/' ]),
+	new Website\Item([ 'Name'=>'Nether PHP Framework', 'URL'=>'/npf/' ]),
+	new Website\Item([ 'Name'=>'OneScript', 'URL'=>'/npf/onescript' ]),
+	new Website\Item([ 'Name'=>$this->Get('page-title') ])
+]);
+
+echo (new Website\Block\ContentHeader);
+echo (new Website\Block\NavigationBar);
+
+?>
+
+<div class="PageSection"><div>
+	<div class="DivTwoColumn">
+		<div>
+			<h4 class="NetherHeader">JSON Structure</h4>
+			<p>To generate a default project file you can run a command like this, changing the path to be where you want the <tt>onescript.json</tt> file generated.</p>
+			<p><code>php vendor/bin/nether-onescript build www/share/test</code></p>
+			<p>This command will have generated a <tt>www/share/test</tt> directory containing a file called <tt>onescript.json</tt>, as well as a directory called <tt>src</tt>. Most of these options can be defined on the CLI as well, but here are the defaults.</p>
+			<?php echo (new Website\Block\Code)
+			->SetFile(sprintf('%s/www/code/npf/onescript/schema.json',PROJECT_ROOT))
+			->SetRenderer($javascript) ?>
+		</div>
+		<div>
+			<h4 class="NetherHeader">Directory Structure</h4>
+			<p>To the right there is a command that will initialise a new OneScript project in <tt>www/share/test</tt> using all the default options. This is the matching directory structure for that project.</p>
+
+			<h4>www/share/test</h4>
+			<ul>
+				<li>
+					<tt>./onescript.json</tt><br />
+					This is the file that defines the project. It contains the JSON you see to the left.
+				</li>
+				<li>
+					<tt>./dist/</tt><br />
+					This is the directory the final build will be placed inside of.
+				</li>
+				<li>
+					<tt>./src/</tt><br />
+					This is the directory all of your &quot;Main Files&quot; should go in. This means any files which are defined in the <tt>Files</tt> property in the JSON.
+				</li>
+				<li>
+					<tt>./src/libs/</tt><br />
+					This is the directory all of your &quot;Plugins&quot; should go in. These are the files which it will find and include after your main files.
+				</li>
+			</ul>
+		</div>
+	</div>
+</div></div>
+<div class="PageSection"><div>
+	<ul>
+		<li>
+			<h4>AddFileHeader: boolean</h4>
+			<p>If true, comments will be placed in the final build file separating each file from eachother visually.</p>
+		</li>
+		<li>
+			<h4>AddScriptHeader: boolean</h4>
+			<p>If true, a comment will be placed at the top of the final build file that describes the build with inforomation such as the date and which files it contains.</p>
+		</li>
+		<li>
+			<h4>Directories: array of strings</h4>
+			<p>The list of directories that should be searched for plugins or extensions relative to the project root. Based on the example JSON above, when building OneScript would only search the <tt>www/share/test/src/libs</tt> directory.</p>
+		</li>
+		<li>
+			<h4>DistDir: string</h4>
+			<p>The directory the final redistributable files will be placed in, relative to the project root. Based on the example command and JSON above, this would result in the files being placed in <tt>www/share/test/dist</tt>.</p>
+		</li>
+		<li>
+			<h4>Extensions: array of strings</h4>
+			<p>A list of file extensions that will be used to filter files when searching for plugins or extensions in the directories specified by the <tt>Directories</tt> option. Based on the example JSON above it would only use files ending in <tt>.js</tt> found in the <tt>share/www/test/libs</tt> directory. This is notable because you can also use OneScript to build your CSS into a single file if desired.</p>
+		</li>
+		<li>
+			<h4>Files: array of strings</h4>
+			<p>This is a list of files which must be loaded BEFORE any of the plugins or extensions, relative to the project root <tt>src</tt> directory. This example JSON has no files specified, but if we had specified a file called <tt>main.js</tt> in this array, it will look for it in the <tt>www/share/test/src</tt> directory.</p>
+		</li>
+		<li>
+			<h4>Minify: boolean</h4>
+			<p>This feature is not yet implemented. In the future it will allow you to minify your JS to make it even faster to download. For the most part you are probably already going to be working with already minified files anyway and we cannot really double-minify them.</p>
+		</li>
+		<li>
+			<h4>OutputFile: string</h4>
+			<p>This will be the name of the final file OneScript creates in the <tt>DestDir</tt> directory. Your one script. Based on the example JSON above, this would result in your final file being called <tt>www/share/test/dist/onescript.js</tt></p>
+		</li>
+	</ul>
+</div></div>

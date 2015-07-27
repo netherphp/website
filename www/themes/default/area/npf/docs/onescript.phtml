@@ -15,13 +15,30 @@ echo (new Website\Block\NavigationBar);
 
 <div class="PageSection"><div>
 	<h2 class="NetherHeader">About</h2>
-	<p>OneScript is a utility designed to help you optmise the distribution of your front-end scripting. After installing you can jump right in by executing <code>php vendor/bin/nether-onescript help</code>, but here are a few easy to grok cases where OneScript can help you out.</p>
+	<p>OneScript is a utility designed to help you optmise the distribution of your front-end scripting. After installing you can jump right in by executing <code>php vendor/bin/nether-onescript help</code>, in the following sections there are a few easy to grok cases where OneScript can help you out.</p>
+	<p>It works on the premise that your scripting has files which much be loaded before any others (framework). It will take those files and merge them into a single file. Afterwards, it searches for any additional files (plugins) and appends them after that. The result is one script that has the entire project built into it. It does not modify the code at all, it mearly creates a redistributable package of the code which is easy to update (rebuild) if you ever make changes later to any of the original source files. This is achieved by a JSON file which defines how the project should be built.</p>
 </div></div>
 
 <div class="PageSection"><div>
 	<h2 class="NetherHeader">Installing</h2>
 	<p>Add to Composer and go.</p>
 	<pre>require { "netherphp/onescript":"^1.1" }</pre>
+</div></div>
+
+<div class="PageSection NUI-Folderr"><div>
+	<h2 class="NetherHeader NUI-Folder-Title">
+		<i class="fa fa-caret-right"></i>
+		The JSON Build File Schema.
+	</h2>
+	<div class="NUI-Folder-Inner">
+		<p>To generate a default project file you can run a command like this, changing the path to be where you want the <tt>onescript.json</tt> file generated.</p>
+		<p><code>php vendor/bin/nether-onescript build www/share/test</code></p>
+		<p>This command will have generated a <tt>www/share/test</tt> directory containing a file called <tt>onescript.json</tt>, as well as a directory called <tt>src</tt>. Most of these options can be defined on the CLI as well, but here are the defaults.</p>
+		<?php echo (new Website\Block\Code)
+		->SetFile(sprintf('%s/www/code/npf/onescript/schema.json',PROJECT_ROOT))
+		->SetRenderer($javascript) ?>
+		<p class="TextCenter"><a href="/npf/onescript/schema" class="Button">Would you like to know more?</a></p>
+	</div>
 </div></div>
 
 <div class="PageSection NUI-Folder"><div>
