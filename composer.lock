@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "504a1effaa91470c90f98fea57337d94",
+    "hash": "fdba98e14193ba5df86d1f6ee3ccfd25",
     "packages": [
         {
             "name": "andrewsville/php-token-reflection",
@@ -726,16 +726,16 @@
         },
         {
             "name": "netherphp/surface",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/surface.git",
-                "reference": "e8209643b50ad36bda37c9854ae38a63c768623b"
+                "reference": "30df65f04d36c874b93ccb96e836f291fa18bc68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/surface/zipball/e8209643b50ad36bda37c9854ae38a63c768623b",
-                "reference": "e8209643b50ad36bda37c9854ae38a63c768623b",
+                "url": "https://api.github.com/repos/netherphp/surface/zipball/30df65f04d36c874b93ccb96e836f291fa18bc68",
+                "reference": "30df65f04d36c874b93ccb96e836f291fa18bc68",
                 "shasum": ""
             },
             "require": {
@@ -767,7 +767,7 @@
                 "php",
                 "template"
             ],
-            "time": "2015-05-26 23:51:00"
+            "time": "2015-07-27 21:22:01"
         },
         {
             "name": "netherphp/util",
