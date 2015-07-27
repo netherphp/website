@@ -1,32 +1,30 @@
 <?php
 
-Nether\Stash::Get('surface')->Set('page-title','Deploy a jQuery stack with OneScript');
+$this->Set('page-title','Deploy a jQuery stack with OneScript');
+$this->Set('page-subtitle','Getting a handle on a messy pile of third-party plugins.');
+$this->Set('page-navigation',[
+	new Website\Item([ 'Name'=>'Home', 'URL'=>'/' ]),
+	new Website\Item([ 'Name'=>'Nether PHP Framework', 'URL'=>'/npf/' ]),
+	new Website\Item([ 'Name'=>'OneScript', 'URL'=>'/npf/onescript' ]),
+	new Website\Item([ 'Name'=>$this->Get('page-title') ])
+]);
+
+echo (new Website\Block\ContentHeader);
+echo (new Website\Block\NavigationBar);
 
 ?>
-
-<div class="PageSection SplashSection SplashGraphicNPF"><div>
-	<h2>Deploy a jQuery stack with OneScript</h2>
-	<p>Getting a handle on a messy pile of third-party plugins.</p>
-</div></div>
-
-<div class="PageNavigation">
-	<ul class="Breadcrumbs">
-		<li><i class="fa fa-home"></i></li>
-		<li><a href="/">Home</a></li>
-		<li><i class="fa fa-angle-right"></i></li>
-		<li><a href="/npf/">Nether PHP Framework</a></li>
-		<li><i class="fa fa-angle-right"></i></li>
-		<li><a href="/npf/onescript">OneScript</a></li>
-	</ul>
-</div>
 
 <div class="PageSection"><div>
 	<h2 class="NetherHeader">The Problem</h2>
 	<p>We started a new jQuery based project a few months back, but we ran into some issues where we were unhappy with how you do things like handle cookies or whatever from Javascript/jQuery. Over these past few months we have found some excellent third-party plugins for jQuery that do what we need. And why not right? A simple Google search for "jQuery plugin" yields tons of results like "50 Amazing jQuery plugins you should start using right now!" - The problem is now our webpage is loading a whole lot of separate scripts to get the jobs done.</p>
-	<pre class="CodeBlock"><?php echo $html->highlight(file_get_contents(sprintf('%s/www/code/npf/onescript/problem.txt',PROJECT_ROOT))) ?></pre>
+	<?php echo (new Website\Block\Code)
+	->SetFile(sprintf('%s/www/code/npf/onescript/problem.txt',PROJECT_ROOT))
+	->SetRenderer($html); ?>
 	<p>We have some mobile users and maybe even some desktop users claiming our site takes too long to load or is slow to react to the first few actions the user wants to take. This is most likely caused (assuming your app doesn't suck) by having way too many separate scripts.</p>
 	<p>This is a problem because the browser may need to establish multiple connections to the server to try and download multiple files in parallel, potentially giving your DevOps a headache as she wonders why each request is opening so many connections. If the browser is unable to stream them side by side, then it will have to get them as it can one by one, which would then cause the browser to wait until all the scripts are done before being able to ready your page. Low power devices like phones are probably just going to go cry in the corner for a while. The reason for this is all because establishing new TCP/IP connections is a rather costly operation. We can optimise our scripts by compiling them all down into one single file that the browser can grab, hitting the ground running.</p>
-	<pre class="CodeBlock"><?php echo $html->highlight(file_get_contents(sprintf('%s/www/code/npf/onescript/answer.txt',PROJECT_ROOT))) ?></pre>
+	<?php echo (new Website\Block\Code)
+	->SetFile(sprintf('%s/www/code/npf/onescript/answer.txt',PROJECT_ROOT))
+	->SetRenderer($html); ?>
 	<p>This guide will show you the most minimally invasive way to do this with OneScript.</p>
 
 	<h3>Demo Project</h3>
@@ -67,10 +65,14 @@ Nether\Stash::Get('surface')->Set('page-title','Deploy a jQuery stack with OneSc
 	<div class="NUI-Folder-Inner">
 		<p>For this we will need to create two different OneScript projects - one to compile the JS to a single file, and another to compile the CSS down to one as well. To do this we will use the command line interface. This will create a new file called <tt>scripts.json</tt>. This file is done, it has been preconfigured with those command line arguments.</p>
 		<p><code>$ php vendor/bin/nether-onescript create www/share/jquery --filename=scripts.json --outfile=jquery-et-al.js --files=jquery.min.js</code><p>
-		<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/npf/onescript/jquery-scripts.json',PROJECT_ROOT))) ?></pre>
+		<?php echo (new Website\Block\Code)
+		->SetFile(sprintf('%s/www/code/npf/onescript/jquery-scripts.json',PROJECT_ROOT))
+		->SetRenderer($javascript); ?>
 		<p>Now we need to run the OneScript CLI tool again to generate a project for the CSS files, it will be slightly different.</p>
 		<p><code>$ php vendor/bin/nether-onescript create www/share/jquery --filename=styles.json --outfile=jquery-et-al.css --extensions=css</code></p>
-		<pre class="CodeBlock"><?php echo $javascript->highlight(file_get_contents(sprintf('%s/www/code/npf/onescript/jquery-styles.json',PROJECT_ROOT))) ?></pre>
+		<?php echo (new Website\Block\Code)
+		->SetFile(sprintf('%s/www/code/npf/onescript/jquery-styles.json',PROJECT_ROOT))
+		->SetRenderer($javascript); ?>
 		<p>We have now successfully set OneScript up with the ability to compile all the Javascript and CSS files down into redistributable packages.</p>
 	</div>
 </div></div>
@@ -84,9 +86,13 @@ Nether\Stash::Get('surface')->Set('page-title','Deploy a jQuery stack with OneSc
 		<p>This will generate your <tt>/share/jquery/dist/jquery-et-al.js</tt> and <tt>/share/jquery/dist/jquery-et-al.css</tt> files.</p>
 		<p class="TextCenter"><img src="/code/npf/onescript/jquery-built.png" /></p>
 		<p>So go back to your website template now and delete all the script paths...</p>
-		<pre class="CodeBlock"><?php echo $html->highlight(file_get_contents(sprintf('%s/www/code/npf/onescript/problem.txt',PROJECT_ROOT))) ?></pre>
+		<?php echo (new Website\Block\Code)
+		->SetFile(sprintf('%s/www/code/npf/onescript/problem.txt',PROJECT_ROOT))
+		->SetRenderer($html); ?>
 		<p>To reference your compiled versions instead.</p>
-		<pre class="CodeBlock"><?php echo $html->highlight(file_get_contents(sprintf('%s/www/code/npf/onescript/answer.txt',PROJECT_ROOT))) ?></pre>
+		<?php echo (new Website\Block\Code)
+		->SetFile(sprintf('%s/www/code/npf/onescript/answer.txt',PROJECT_ROOT))
+		->SetRenderer($html); ?>
 		<p>Any time you need to update jQuery or a plugin, overwrite the relevant files in your <tt>src</tt> directory and rerun the OneScript build command to update the final version.</p>
 	</div>
 </div></div>

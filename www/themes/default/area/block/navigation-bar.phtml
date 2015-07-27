@@ -1,0 +1,23 @@
+<?php
+
+$PrintLabel = function($item) {
+	if($item->Click) { echo "<li><a href=\"#\" onclick=\"{$item->Click}; return false;\">{$item->Name}</a></li>\n"; }
+	elseif($item->URL) { echo "<li><a href=\"{$item->URL}\">{$item->Name}</a></li>\n"; }
+	else { echo "<li>{$item->Name}</li>\n"; }
+};
+
+$PrintIcon = function($item) {
+	if($item->Icon)
+	echo "<li><i class=\"fa {$item->Icon}\"></i></li>\n";
+};
+
+?>
+
+<div class="PageNavigation">
+	<ul class="Breadcrumbs">
+<?php foreach($block->GetItemList() as $item): ?>
+		<?php $PrintIcon($item) ?>
+		<?php $PrintLabel($item) ?>
+<?php endforeach; ?>
+	</ul>
+</div>

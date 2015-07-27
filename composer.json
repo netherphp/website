@@ -6,6 +6,10 @@
 		"kukulich/fshl": "~2.1.0"
 	},
 	"autoload": {
+		"psr-0": {
+			"Packages\\":"core/",
+			"Website\\":"core/"
+		},
 		"psr-4": {
 			"Routes\\": "routes/"
 		}

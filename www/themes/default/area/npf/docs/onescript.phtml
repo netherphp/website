@@ -1,16 +1,17 @@
-<div class="PageSection SplashSection SplashGraphicNPF"><div>
-	<h2>Nether OneScript</h2>
-	<p>Optimise your client-side scripting into singular bundles.</p>
-</div></div>
+<?php
 
-<div class="PageNavigation">
-	<ul class="Breadcrumbs">
-		<li><i class="fa fa-home"></i></li>
-		<li><a href="/">Home</a></li>
-		<li><i class="fa fa-angle-right"></i></li>
-		<li><a href="/npf/">Nether PHP Framework</a></li>
-	</ul>
-</div>
+$this->Set('page-title','OneScript');
+$this->Set('page-subtitle','Optimise your client-side scripting into singular bundles.');
+$this->Set('page-navigation',[
+	new Website\Item([ 'Name'=>'Home', 'URL'=>'/' ]),
+	new Website\Item([ 'Name'=>'Nether PHP Framework', 'URL'=>'/npf/' ]),
+	new Website\Item([ 'Name'=>$this->Get('page-title') ])
+]);
+
+echo (new Website\Block\ContentHeader);
+echo (new Website\Block\NavigationBar);
+
+?>
 
 <div class="PageSection"><div>
 	<h2 class="NetherHeader">About</h2>
