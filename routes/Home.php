@@ -12,8 +12,7 @@ class Home extends Routes\Common\PublicWeb {
 	}
 
 	public function NotFound() {
-		header("Location: /");
-		exit(0);
+		$this->Surface->Area('home/not-found');
 		return;
 	}
 

@@ -1,0 +1,13 @@
+<?php
+
+$this->Set('page-title','Not Found');
+$this->Set('page-subtitle','File Not Found.');
+$this->Set('page-navigation',[
+	new Website\Item([ 'Name'=>'Home', 'URL'=>'/' ]),
+	new Website\Item([ 'Name'=>'Error: Not Found' ])
+]);
+
+echo (new Website\Block\ContentHeader);
+echo (new Website\Block\NavigationBar);
+
+?>

@@ -38,7 +38,7 @@ class Npf extends Routes\Common\PublicWeb {
 		
 		try { $this->Surface->Area("npf/docs/{$section}"); }
 		catch(\Exception $e) {
-			$this->Surface->Set('page-title','Document Not Found');
+			$this->Surface->Area('home/not-found');
 		}
 			
 		return;
