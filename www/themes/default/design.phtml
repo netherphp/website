@@ -41,9 +41,9 @@ $route = Nether\Stash::Get('web:route');
 
 <div id="PageFooter"><div>
 	<div style="float:right;opacity:0.5;">
-		<img src="<?php $surface->FromTheme('gfx/logo-html5.png') ?>" title="HTML5" />
-		<img src="<?php $surface->FromTheme('gfx/logo-css3.png') ?>" title="CSS3" />
-		<img src="<?php $surface->FromTheme('gfx/logo-rarity.png') ?>" title="The type of pony everypony should know." />
+		<img src="<?php echo $surface->GetThemeURI('gfx/logo-html5.png') ?>" title="HTML5" />
+		<img src="<?php echo $surface->GetThemeURI('gfx/logo-css3.png') ?>" title="CSS3" />
+		<img src="<?php echo $surface->GetThemeURI('gfx/logo-rarity.png') ?>" title="The type of pony everypony should know." />
 	</div>
 	all the things copyright © 2015 nether.io / bob majdak jr<br />
 	header image copyright... that one tv show.
