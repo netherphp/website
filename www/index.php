@@ -9,6 +9,7 @@ require(sprintf(
 
 $router = (new Nether\Avenue\Router)
 ->AddRoute('{@}//index','Routes\Home::Index')
+->AddRoute('{@}//support','Routes\Home::Support')
 ->AddRoute('{@}//npf','Routes\Npf::Index')
 ->AddRoute('{@}//npf/([a-z\/]+)','Routes\Npf::Docs')
 ->AddRoute('{@}//nui','Routes\Nui::Index')
@@ -17,4 +18,8 @@ $router = (new Nether\Avenue\Router)
 
 Nether\Stash::Set('web:router',$router);
 
-$router->Run();
+try { $router->Run(); }
+catch(Exception $e) {
+	Nether\Stash::Get('surface')
+	->Area('home/error');
+}

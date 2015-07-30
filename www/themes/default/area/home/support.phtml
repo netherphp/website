@@ -1,0 +1,25 @@
+<?php
+
+$this->Set('page-title','Need Help?');
+$this->Set('page-subtitle','Bob\'s Your Uncle');
+$this->Set('page-navigation',[
+	new Website\Item([ 'Name'=>'Home', 'URL'=>'/' ]),
+	new Website\Item([ 'Name'=>$this->Get('page-title') ])
+]);
+
+echo (new Website\Block\ContentHeader);
+echo (new Website\Block\NavigationBar);
+
+?>
+
+<div class="PageSection"><div>
+	<p>If you need help with anything, feel free to try and get in contact with me. I would be so excited to hear that someone other than me is actually using my projects for once. I would be most likely to respond during business hours on weekdays, as they happen in the Central (Texas) timezone. Don't feel bad if I don't respond right away, I have a job too you know.</p>
+</div></div>
+
+<div class="PageSection"><div>
+	<ul>
+		<li>Twitter: <a href="http://twitter.com/bobmajdakjr">@bobmajdakjr on Twitter</a></li>
+		<li>Gitter.im: <a href="https://gitter.im/netherphp">netherphp</a></li>
+		<li>IRC: irc.freenode.net, channel #dallasphp, I will be either &quot;bob&quot; or &quot;caboose&quot; in the chat.</li>
+	</ul>
+</div></div>

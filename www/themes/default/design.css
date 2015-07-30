@@ -135,7 +135,8 @@ a.ButtonAlt:hover { background:#D1ADD5; color:#000; }
 /*//////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////*/
 
-.ComponentGrid { list-style-type:none; margin:0px; overflow:auto; padding:0px; }
+.ComponentGrid { list-style-type:none; margin:0px 0px 50px 0px; overflow:auto; padding:0px; }
+.ComponentGrid:last-child { margin:0px; }
 .ComponentGrid li { float:left; margin:0px; padding:10px; width:25%; }
 .ComponentGrid li a { background:#888; color:#fff; display:block; margin:0px; padding:10px; text-align:center; text-decoration:none; }
 .ComponentGrid li a img { margin-top:10px; }

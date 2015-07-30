@@ -19,7 +19,7 @@ echo (new Website\Block\NavigationBar);
 		<div>
 			<h4 class="NetherHeader">JSON Structure</h4>
 			<p>To generate a default project file you can run a command like this, changing the path to be where you want the <tt>onescript.json</tt> file generated.</p>
-			<p><code>php vendor/bin/nether-onescript build www/share/test</code></p>
+			<p><code>php vendor/bin/nether-onescript create www/share/test</code></p>
 			<p>This command will have generated a <tt>www/share/test</tt> directory containing a file called <tt>onescript.json</tt>, as well as a directory called <tt>src</tt>. Most of these options can be defined on the CLI as well, but here are the defaults.</p>
 			<?php echo (new Website\Block\Code)
 			->SetFile(sprintf('%s/www/code/npf/onescript/schema.json',PROJECT_ROOT))
