@@ -1,8 +1,7 @@
 {
-	"minimum-stability":"dev",
 	"require": {
-		"netherphp/world": "dev-master",
-		"netherjs/nui":"^1.0",
+		"netherphp/world": "^1.0.0",
+		"netherjs/nui":"^1.0.0",
 		"kukulich/fshl": "~2.1.0"
 	},
 	"autoload": {
