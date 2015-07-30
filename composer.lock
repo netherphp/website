@@ -7,52 +7,6 @@
     "hash": "fdba98e14193ba5df86d1f6ee3ccfd25",
     "packages": [
         {
-            "name": "andrewsville/php-token-reflection",
-            "version": "1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Andrewsville/PHP-Token-Reflection.git",
-                "reference": "3e3a36de17f32889fd2d4b8108af16d3033ce9bf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Andrewsville/PHP-Token-Reflection/zipball/3e3a36de17f32889fd2d4b8108af16d3033ce9bf",
-                "reference": "3e3a36de17f32889fd2d4b8108af16d3033ce9bf",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "TokenReflection": "./"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3"
-            ],
-            "authors": [
-                {
-                    "name": "Ondřej Nešpor",
-                    "homepage": "https://github.com/andrewsville"
-                },
-                {
-                    "name": "Jaroslav Hanslík",
-                    "homepage": "https://github.com/kukulich"
-                }
-            ],
-            "description": "Library emulating the PHP internal reflection using just the tokenized source code.",
-            "homepage": "http://andrewsville.github.com/PHP-Token-Reflection/",
-            "keywords": [
-                "library",
-                "reflection",
-                "tokenizer"
-            ],
-            "time": "2012-08-25 21:26:44"
-        },
-        {
             "name": "kukulich/fshl",
             "version": "2.1.0",
             "source": {
@@ -93,57 +47,6 @@
                 "syntax"
             ],
             "time": "2012-09-08 19:00:07"
-        },
-        {
-            "name": "michelf/php-markdown",
-            "version": "1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/michelf/php-markdown.git",
-                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/e1aabe18173231ebcefc90e615565742fc1c7fd9",
-                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-lib": "1.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "Michelf": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "John Gruber",
-                    "homepage": "http://daringfireball.net/"
-                },
-                {
-                    "name": "Michel Fortin",
-                    "email": "michel.fortin@michelf.ca",
-                    "homepage": "https://michelf.ca/",
-                    "role": "Developer"
-                }
-            ],
-            "description": "PHP Markdown",
-            "homepage": "https://michelf.ca/projects/php-markdown/",
-            "keywords": [
-                "markdown"
-            ],
-            "time": "2015-03-01 12:03:08"
         },
         {
             "name": "netherjs/nui",
@@ -231,7 +134,7 @@
         },
         {
             "name": "netherphp/cache",
-            "version": "dev-master",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/cache.git",
@@ -497,16 +400,16 @@
         },
         {
             "name": "netherphp/onescript",
-            "version": "v1.1.3",
+            "version": "v1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/onescript.git",
-                "reference": "9c59e24283bd9c4e886bf87ee7e0fc7534b1038c"
+                "reference": "d99e1b275f982d57061d3a24dd4fc5cda0b8db2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/onescript/zipball/9c59e24283bd9c4e886bf87ee7e0fc7534b1038c",
-                "reference": "9c59e24283bd9c4e886bf87ee7e0fc7534b1038c",
+                "url": "https://api.github.com/repos/netherphp/onescript/zipball/d99e1b275f982d57061d3a24dd4fc5cda0b8db2c",
+                "reference": "d99e1b275f982d57061d3a24dd4fc5cda0b8db2c",
                 "shasum": ""
             },
             "require": {
@@ -544,7 +447,7 @@
                 "javascript",
                 "php"
             ],
-            "time": "2015-07-22 16:59:14"
+            "time": "2015-07-29 00:11:54"
         },
         {
             "name": "netherphp/option",
@@ -634,54 +537,6 @@
             "time": "2015-05-16 02:48:39"
         },
         {
-            "name": "netherphp/senpai",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/netherphp/senpai.git",
-                "reference": "4776acc1106dbb00f71f85811d71fe96862687a5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/senpai/zipball/4776acc1106dbb00f71f85811d71fe96862687a5",
-                "reference": "4776acc1106dbb00f71f85811d71fe96862687a5",
-                "shasum": ""
-            },
-            "require": {
-                "andrewsville/php-token-reflection": "1.3.*",
-                "michelf/php-markdown": "1.*",
-                "netherphp/surface": "~1.0.0",
-                "php": ">=5.4.0"
-            },
-            "bin": [
-                "bin/senpai"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Nether\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Bob Majdak Jr",
-                    "email": "bob@nether.io",
-                    "homepage": "http://nether.io",
-                    "role": "developer"
-                }
-            ],
-            "description": "A documentation engine.",
-            "keywords": [
-                "documentation",
-                "php"
-            ],
-            "time": "2015-05-19 21:56:07"
-        },
-        {
             "name": "netherphp/stash",
             "version": "v1.0.0",
             "source": {
@@ -726,22 +581,23 @@
         },
         {
             "name": "netherphp/surface",
-            "version": "v1.0.1",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/surface.git",
-                "reference": "30df65f04d36c874b93ccb96e836f291fa18bc68"
+                "reference": "c7149bdaa87fa3ed5e72b0c0ba6e691a0f6156b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/surface/zipball/30df65f04d36c874b93ccb96e836f291fa18bc68",
-                "reference": "30df65f04d36c874b93ccb96e836f291fa18bc68",
+                "url": "https://api.github.com/repos/netherphp/surface/zipball/c7149bdaa87fa3ed5e72b0c0ba6e691a0f6156b2",
+                "reference": "c7149bdaa87fa3ed5e72b0c0ba6e691a0f6156b2",
                 "shasum": ""
             },
             "require": {
-                "netherphp/ki": "~1.0.0",
-                "netherphp/option": "~1.0.0",
-                "netherphp/stash": "~1.0.0",
+                "netherphp/ki": "^1.0.0",
+                "netherphp/object": "^1.0.0",
+                "netherphp/option": "^1.0.0",
+                "netherphp/stash": "^1.0.0",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -767,49 +623,7 @@
                 "php",
                 "template"
             ],
-            "time": "2015-07-27 21:22:01"
-        },
-        {
-            "name": "netherphp/util",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/netherphp/util.git",
-                "reference": "45232351e15e79062346defeb61c0336faea3584"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/util/zipball/45232351e15e79062346defeb61c0336faea3584",
-                "reference": "45232351e15e79062346defeb61c0336faea3584",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Nether\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Bob Majdak Jr",
-                    "email": "bob@nether.io",
-                    "homepage": "http://nether.io",
-                    "role": "developer"
-                }
-            ],
-            "description": "A collection of various utilities.",
-            "keywords": [
-                "php",
-                "util"
-            ],
-            "time": "2014-03-23 23:10:16"
+            "time": "2015-07-30 21:05:07"
         },
         {
             "name": "netherphp/world",
@@ -817,27 +631,27 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/netherphp/world.git",
-                "reference": "041882ad410e1d388935861ddf47de251ea46dc1"
+                "reference": "a5b54c998b2bf63fb0750ff75146f6fab192588e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/netherphp/world/zipball/041882ad410e1d388935861ddf47de251ea46dc1",
-                "reference": "041882ad410e1d388935861ddf47de251ea46dc1",
+                "url": "https://api.github.com/repos/netherphp/world/zipball/a5b54c998b2bf63fb0750ff75146f6fab192588e",
+                "reference": "a5b54c998b2bf63fb0750ff75146f6fab192588e",
                 "shasum": ""
             },
             "require": {
-                "netherphp/avenue": "~1.0.0",
-                "netherphp/cache": "@dev",
-                "netherphp/database": "~1.0.0",
-                "netherphp/input": "~1.0.0",
-                "netherphp/ki": "~1.0.0",
-                "netherphp/object": "~1.0.0",
-                "netherphp/option": "~1.0.0",
-                "netherphp/project": "~1.0.0",
-                "netherphp/senpai": "@dev",
-                "netherphp/stash": "~1.0.0",
-                "netherphp/surface": "~1.0.0",
-                "netherphp/util": "@dev",
+                "netherphp/avenue": "^1.0.0",
+                "netherphp/cache": "^1.0.0",
+                "netherphp/console": "^1.0.0",
+                "netherphp/database": "^1.0.0",
+                "netherphp/input": "^1.0.0",
+                "netherphp/ki": "^1.0.0",
+                "netherphp/object": "^1.0.0",
+                "netherphp/onescript": "^1.1.0",
+                "netherphp/option": "^1.0.0",
+                "netherphp/project": "^1.0.0",
+                "netherphp/stash": "^1.0.0",
+                "netherphp/surface": "^1.1.0",
                 "php": ">=5.4.0"
             },
             "type": "library",
@@ -855,10 +669,12 @@
             ],
             "description": "A meta package to include all the things.",
             "keywords": [
+                "framework",
                 "nether",
-                "php"
+                "php",
+                "pony"
             ],
-            "time": "2015-05-18 01:09:20"
+            "time": "2015-07-30 21:41:29"
         }
     ],
     "packages-dev": [],
